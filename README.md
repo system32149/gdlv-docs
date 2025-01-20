@@ -5,7 +5,7 @@ about this is found here.
 The documentation is stored in manual pages.
 
 ## Installation
-You need:
+Requirements:
 - [mandoc](https://mandoc.bsd.lv)
 
 For now, read the manual pages using `man -l [file]`.
