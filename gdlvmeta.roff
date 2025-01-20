@@ -1,0 +1,52 @@
+.Dd Jan 20 2025
+.Dt GDLVPREPROC 7
+.Os
+.Sh NAME
+.Nm gdlvmeta
+.Nd Metadata statements in GDLV
+.Sh DESCRIPTION
+A
+.Sy metadata statement
+are statements containing level information.
+.Pp
+Here is a list of
+.Sy metadata statements
+that are required:
+.Pp
+.TS
+lb lb
+l  l.
+name        description
+levelname   Name of the level. Can be a string.
+leveldesc   Level description. Can be a string. Optional.
+gamever     The game version of Geometry Dash. Can be a
+            integer.
+.TE
+.Pp
+These
+.Sy metadata statements
+depend on the Geometry Dash version:
+.Pp
+.TS
+lb lb lb
+l  l  l.
+name     description                                version
+ldm      Disable low detail mode or not. Can be a   20
+         boolean.
+.TE
+.Sh IMPLEMENTATION NOTES
+This is a list of level data keys used by the game and GDLV.
+.Pp
+.TS
+lb lb
+l  l.
+key  statement
+k2   levelname
+k3   leveldesc
+k17  gamever
+k72  ldm
+k94  plat
+.TE
+.Sh AUTHORS
+The GDLV language is created by
+.An System32 Aq Mt stvgmpl@gmail.com .
